@@ -283,7 +283,8 @@
             <div class="row">
 
                 <div class="offset-2 col-8 d-flex justify-content-around align-items-center">
-                    <a href="#" class="button-44-ac">登入註冊</a>
+                    @extends('layout.user')
+                    @yield('user')
                     <a href="#" class="button-44">線上捐款</a>
                     <a href="#"><img src="{{ asset('images\logo.png') }}"></a>
                     <a href="#" class="button-44">公益活動</a>
