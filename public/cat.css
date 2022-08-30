@@ -1,0 +1,262 @@
+<style>
+        .AreaSpace_3 {
+            height: 60px;
+        }
+
+        .imgW {
+            width: 320px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        .col-4 {
+            line-height: 0px;
+        }
+
+        .footerspaceArea {
+            height: 40px;
+        }
+
+
+        .button-44 A {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-right: 32px;
+            margin-left: 32px;
+            color: #b13954;
+            background: #fffdff;
+            border-radius: 11px;
+            border-color: #b13954;
+            border: 1px solid;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: center;
+            line-height: 16px;
+            height: 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+            padding: 4px 0px;
+        }
+
+        .button-44-ac A {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-right: 32px;
+            margin-left: 32px;
+            color: #ffe1dd;
+            background: #f94b55;
+            border-radius: 11px;
+            border-color: #b13954;
+            border: 1px solid;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: center;
+            line-height: 16px;
+            height: 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+            padding: 4px 0px;
+        }
+
+        A {
+
+            text-decoration: none;
+            padding: 8px 15px;
+            /* color: #000; */
+        }
+
+        .button-addyin {
+            background-color: #00C2AE;
+            border: 1px solid #2A8387;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            /* line-height: 100%; */
+            width: 100px;
+            margin-top: 12px;
+            outline: 0;
+            text-align: center;
+        }
+
+        #backpic {
+            background-attachment: fixed;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url({{ asset('images/backpic.jpg') }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        .img3s {
+            position: relative;
+
+            /* width: 200px;
+      height: 200px; */
+            padding: .25rem;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text3s {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            margin-top: 32px;
+        }
+
+        .TextArea {
+            margin-top: 72px;
+            margin-bottom: 36px;
+        }
+
+        .title3 {
+            margin-bottom: 16px;
+        }
+
+        .button-knowmore {
+            background-color: #00c2ae;
+            border: 1px solid #2a8387;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            /* line-height: 100%; */
+            width: 100px;
+            margin-top: 12px;
+            outline: 0;
+            text-align: center;
+        }
+
+        .picabout {
+            width: 480px;
+            height: auto;
+        }
+
+        .imgW {
+            width: 320px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        .col-4 {
+            line-height: 0px;
+        }
+
+        .footerspaceArea {
+            height: 40px;
+        }
+
+
+        .button-44 {
+            color: #b13954;
+            background: #fffdff;
+            border-radius: 11px;
+            border-color: #b13954;
+            border: 1px solid;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: center;
+            line-height: 16px;
+            height: 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            width: 64px;
+            padding: 4px 0px;
+        }
+
+        .button-44-ac {
+            color: #ffe1dd;
+            background: #f94b55;
+            border-radius: 11px;
+            border-color: #b13954;
+            border: 1px solid;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: center;
+            line-height: 16px;
+            height: 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            width: 64px;
+            padding: 4px 0px;
+        }
+
+        .button-addyin {
+            background-color: #00c2ae;
+            border: 1px solid #2a8387;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            /* line-height: 100%; */
+            width: 100px;
+            margin-top: 12px;
+            outline: 0;
+            text-align: center;
+        }
+
+        A {
+            text-decoration: none;
+            /* padding: 8px 15px; */
+            /* color: #000; */
+        }
+
+        A:hover {
+            text-decoration: none;
+        }
+
+        /* news */
+        .title_1 {
+            font-size: 48px;
+            color: #feb9c0;
+            font-weight: 700;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .title_2 {
+            font-size: 24px;
+            color: #00c2ae;
+            font-weight: 700;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .title_3 {
+            position: abosulte;
+            top: -20px;
+            left: 6px;
+            font-size: 12px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    </style>

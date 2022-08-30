@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
+});
+
+// Route::resource('/cat', 'App\Http\Controllers\CatController');
+// Route::resource('/dog', 'App\Http\Controllers\DogController');
+// Route::resource('/list', 'App\Http\Controllers\ListController');
+
+Route::middleware(['auth', 'second'])->group(function () {
 });

@@ -15,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+  return $request->user();
 });
+
+Route::apiResource('/index', 'App\Http\Controllers\IndexController');
+
+
+// 加入助養
+// Route::apiResource('/sponsor', 'App\Http\Controllers\Controller');
+// Route::apiResource('/search', 'App\Http\Controllers\Controller');
