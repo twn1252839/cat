@@ -13,13 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('index');
-});
+Route::resource('/', 'App\Http\Controllers\IndexController');
 
 Route::resource('/cat', 'App\Http\Controllers\CatController');
-// Route::resource('/dog', 'App\Http\Controllers\DogController');
-// Route::resource('/list', 'App\Http\Controllers\ListController');
+Route::resource('/dog', 'App\Http\Controllers\DogController');
+Route::resource('/list', 'App\Http\Controllers\ListController');
+
+Route::resource('/login', 'App\Http\Controllers\LoginController');
+
 
 // Route::middleware(['auth', 'second'])->group(function () {
 // });

@@ -1,4 +1,5 @@
 @extends('layout.master')
+@extends('layout.user')
 
 @section('content')
 <div id="backpic">

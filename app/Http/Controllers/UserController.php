@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CatController extends Controller
+class UserController extends Controller
 {
   /**
    * Display a listing of the resource.
@@ -13,7 +13,7 @@ class CatController extends Controller
    */
   public function index()
   {
-    return view('cat');
+    // return view('login');
   }
 
   /**
