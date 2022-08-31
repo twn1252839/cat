@@ -1,7 +1,8 @@
-@extends('layout.master')
+{{-- @extends('layout.master') --}}
 @extends('layout.user')
 
 @section('content')
+{{-- {{$userid}}---{{$password}} --}}
 <div id="backpic">
             <div class="row m-0">
                 <div class="offset-1 col-10">
@@ -18,14 +19,14 @@
                         </div>
                         <div class=" col-4   d-flex justify-content-center align-items-center">
                             <div>
-                                <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s""><br>
+                                <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s"><br>
                                 <div class=" text3s">汪星人
                                 </div>
                             </div>
                         </div>
                         <div class="col-4   d-flex justify-content-center align-items-center">
                             <div>
-                                <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s""><br>
+                                <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s"><br>
                                 <div class=" text3s">捐款名冊
                                 </div>
                             </div>

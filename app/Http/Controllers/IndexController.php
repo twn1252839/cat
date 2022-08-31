@@ -13,7 +13,6 @@ class IndexController extends Controller
    */
   public function index()
   {
-    //
     return view('index');
   }
 
@@ -25,7 +24,11 @@ class IndexController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    // $userid = $request->userid;
+    // $password = $request->password;
+    // return view('/', compact('userid', 'password'));
+    // return $userid . '111' . $password;
+    return $request->all();
   }
 
   /**
@@ -36,7 +39,6 @@ class IndexController extends Controller
    */
   public function show($id)
   {
-    //
   }
 
   /**

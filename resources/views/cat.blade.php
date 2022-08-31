@@ -1,4 +1,4 @@
-@extends('layout.master')
+{{-- @extends('layout.master') --}}
 @extends('layout.user')
 
 @section('content')

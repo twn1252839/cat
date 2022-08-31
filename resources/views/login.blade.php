@@ -146,9 +146,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-6">
-      <img src="{{asset('images/1.png')}}" alt="" class="img-thumbnail">
-
+    <div class="col-6 p-0">
+      <img src="{{asset('images/1.png')}}" alt="" class="h-100">
     </div>
     <div class="col-6">
       <div class="row">
@@ -156,13 +155,13 @@
         <div class="col-1 logo"><img src="{{asset('images/logo.png')}}"></div>
 
         <div class="offset-8 col-1">
-          <button class="reg-btn" role="button"><a href="#"><i class="fas fa-user-plus "
+          <button class="reg-btn" role="button"><a href="{{url('/index')}}"><i class="fas fa-user-plus "
                 style="color:#E0A652"></i></a>註冊</button>
 
         </div>
       </div>
       <div id="spaceArea"></div>
-      <form action="{{url('/api/catdog/user')}}" method="post">
+      <form action=" {{ route('index.store') }} " method="post">
         <div id="loginarea" class="textcenter offset-1">
         <div class="offset-1">
           <h3>用戶登錄<br></h3>

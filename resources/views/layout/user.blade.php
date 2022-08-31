@@ -1,10 +1,9 @@
 @extends('layout.master')
 
 @section('user')
-    {{-- {{$username}} --}}
-    {{-- <li class="list-unstyled text-center h3">123</li><span class="text-danger">~歡迎登入~</span> --}}
+        <a href=" {{ url('/login') }} " class="button-44-ac"> 登入/註冊 </a>
 
-    @if ($user == '123')
+    {{-- @if ($user == '456')
         <div class="dropdown">
             <button class="btn dropdown-toggle membercolorsite" type="button" data-bs-toggle="dropdown"><span
                     class="membercolor1-1   button-44-ac button-44-ac0">會員：</span><span class="membercolor1-2">
@@ -16,5 +15,5 @@
         </div>
     @else
         <a href="#" class="button-44-ac"> 登入/註冊 </a>
-    @endif
+    @endif --}}
 @endsection
