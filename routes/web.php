@@ -16,12 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', 'App\Http\Controllers\IndexController');
 // Route::post('/store', 'App\Http\Controllers\IndexController@store');
 
-Route::resource('/animals', 'App\Http\Controllers\AnimalController');
+// Route::resource('/animals', 'App\Http\Controllers\AnimalController');
 Route::get('/animals/cat/index', 'App\Http\Controllers\AnimalController@cat');
 Route::get('/animals/dog/index', 'App\Http\Controllers\AnimalController@dog');
 Route::get('/animals/list/index', 'App\Http\Controllers\AnimalController@list');
 
 Route::resource('/login', 'App\Http\Controllers\LoginController');
+Route::get('/register', 'App\Http\Controllers\LoginController@register');
 Route::resource('/user', 'App\Http\Controllers\UserController');
 
 

@@ -155,8 +155,8 @@
         <div class="col-1 logo"><img src="{{asset('images/logo.png')}}"></div>
 
         <div class="offset-8 col-1">
-          <button class="reg-btn" role="button"><a href="{{url('/index')}}"><i class="fas fa-user-plus "
-                style="color:#E0A652"></i></a>註冊</button>
+          <a href="{{ url('register') }}" class="reg-btn"><i class="fas fa-user-plus "
+                style="color:#E0A652">註冊</i></a>
 
         </div>
       </div>

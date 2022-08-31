@@ -1,5 +1,5 @@
-{{-- @extends('layout.master')  --}}
-@extends('layout.user')
+@extends('layout.master')
+{{-- @extends('layout.user') --}}
 
 @section('content')
     <p>register</p>

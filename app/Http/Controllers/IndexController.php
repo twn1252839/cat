@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Throwable;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -24,11 +26,21 @@ class IndexController extends Controller
    */
   public function store(Request $request)
   {
-    // $userid = $request->userid;
-    // $password = $request->password;
-    // return view('/', compact('userid', 'password'));
-    // return $userid . '111' . $password;
-    return $request->all();
+    // return $request->all();
+    $userid = $request->userid;
+    $password = $request->password;
+    // return $userid . '----' . $password;
+
+    $user = User::where('userid', $userid)->where('password', $password)->first();
+    try {
+      if (isset($user)) {
+        return view('index', compact('user'));
+      } else {
+        return '登入失敗';
+      }
+    } catch (Throwable $th) {
+      return $th;
+    }
   }
 
   /**

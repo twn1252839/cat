@@ -286,7 +286,7 @@
                     @section('user')
                         {{-- @parent --}}
                     @show
-                    <a href="{{url('/')}}#" class="button-44">線上捐款</a>
+                    <a href="{{url('Sponsor')}}#" class="button-44">線上捐款</a>
                     <a href="{{url('/')}}"><img src="{{ asset('images\logo.png') }}"></a>
                     <a href="{{url('/')}}" class="button-44">公益活動</a>
                     <a href="{{url('/')}}" class="button-44">查詢助養</a>

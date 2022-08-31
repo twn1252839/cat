@@ -10,26 +10,25 @@
                     </div>
                     <div class="row">
                         <div class="col-4   d-flex justify-content-center align-items-center">
-                            <div>
+                            <a href=" {{ url('/animals/cat/index') }}  ">
                                 <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s"><br>
                                 <div class=" text3s">喵星人
                                 </div>
-
-                            </div>
+                              </a>
                         </div>
                         <div class=" col-4   d-flex justify-content-center align-items-center">
-                            <div>
+                            <a href=" {{ url('/animals/dog/index') }}  ">
                                 <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s"><br>
                                 <div class=" text3s">汪星人
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-4   d-flex justify-content-center align-items-center">
-                            <div>
+                            <a href=" {{ url('/animals/list/index') }}  ">
                                 <img src="{{ asset('images/menu1.png') }}" alt="" class="img3s"><br>
                                 <div class=" text3s">捐款名冊
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
