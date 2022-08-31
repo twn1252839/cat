@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', 'App\Http\Controllers\IndexController');
 
-Route::resource('/cat', 'App\Http\Controllers\CatController');
-Route::resource('/dog', 'App\Http\Controllers\DogController');
-Route::resource('/list', 'App\Http\Controllers\ListController');
+Route::resource('/animals', 'App\Http\Controllers\AnimalController');
+Route::get('/animals/cat/index', 'App\Http\Controllers\AnimalController@cat');
+Route::get('/animals/dog/index', 'App\Http\Controllers\AnimalController@dog');
+Route::get('/animals/list/index', 'App\Http\Controllers\AnimalController@list');
 
 Route::resource('/login', 'App\Http\Controllers\LoginController');
 Route::resource('/user', 'App\Http\Controllers\UserController');

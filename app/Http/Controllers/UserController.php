@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Member;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -12,10 +12,11 @@ class UserController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index(User $user)
   {
     // return view('Sponsor');
-    return Member::get();
+    return $user->get();
+    // return Member::get();
   }
 
   /**
@@ -45,9 +46,9 @@ class UserController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show(User $user)
   {
-    //
+    return $user;
   }
 
   /**

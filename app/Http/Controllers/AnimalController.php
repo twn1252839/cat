@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\animal;
 use Illuminate\Http\Request;
 
-class CatController extends Controller
+class AnimalController extends Controller
 {
   /**
    * Display a listing of the resource.
@@ -13,7 +14,7 @@ class CatController extends Controller
    */
   public function index()
   {
-    return view('cat');
+    //
   }
 
   /**
@@ -40,10 +41,10 @@ class CatController extends Controller
   /**
    * Display the specified resource.
    *
-   * @param  int  $id
+   * @param  \App\Models\animal  $animal
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show(animal $animal)
   {
     //
   }
@@ -51,10 +52,10 @@ class CatController extends Controller
   /**
    * Show the form for editing the specified resource.
    *
-   * @param  int  $id
+   * @param  \App\Models\animal  $animal
    * @return \Illuminate\Http\Response
    */
-  public function edit($id)
+  public function edit(animal $animal)
   {
     //
   }
@@ -63,10 +64,10 @@ class CatController extends Controller
    * Update the specified resource in storage.
    *
    * @param  \Illuminate\Http\Request  $request
-   * @param  int  $id
+   * @param  \App\Models\animal  $animal
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, $id)
+  public function update(Request $request, animal $animal)
   {
     //
   }
@@ -74,11 +75,25 @@ class CatController extends Controller
   /**
    * Remove the specified resource from storage.
    *
-   * @param  int  $id
+   * @param  \App\Models\animal  $animal
    * @return \Illuminate\Http\Response
    */
-  public function destroy($id)
+  public function destroy(animal $animal)
   {
     //
+  }
+  //
+  public function cat()
+  {
+    $cat = Animal::where('category', 'cat')->orderBy('created_at', 'desc')->get();
+    return view('cat', compact('cat'));
+  }
+  public function dog(animal $animal)
+  {
+    return Animal::where('category', 'dog')->orderBy('created_at', 'desc')->get();
+  }
+  public function list(animal $animal)
+  {
+    return Animal::where('category', 'others')->orderBy('created_at', 'desc')->get();
   }
 }
