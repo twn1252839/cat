@@ -85,15 +85,18 @@ class AnimalController extends Controller
   //
   public function cat()
   {
-    $cat = Animal::where('category', 'cat')->orderBy('created_at', 'desc')->get();
-    return view('cat', compact('cat'));
+    // $cats = Animal::all();
+    $cats = Animal::where('category', 'cat')->orderBy('created_at', 'desc')->get();
+    return view('cat', compact('cats'));
   }
   public function dog(animal $animal)
   {
-    return Animal::where('category', 'dog')->orderBy('created_at', 'desc')->get();
+    $dog = Animal::where('category', 'dog')->orderBy('created_at', 'desc')->get();
+    return view('dog', compact('dog'));
   }
   public function list(animal $animal)
   {
-    return Animal::where('category', 'others')->orderBy('created_at', 'desc')->get();
+    $list = Animal::where('category', 'others')->orderBy('created_at', 'desc')->get();
+    return view('list', compact('list'));
   }
 }
