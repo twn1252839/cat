@@ -10,8 +10,8 @@
                     class="membercolor1-1   button-44-ac button-44-ac0">會員：</span><span class="membercolor1-2">
                     {{ $user }} </span></button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item membercolor" href="#">修改會員</a></li>
-                <li><a class="dropdown-item membercolor" href="#">個人捐款紀錄</a></li>
+                <li><a class="dropdown-item membercolor" href=" {{ url('/login/edit') }} ">修改會員</a></li>
+                <li><a class="dropdown-item membercolor" href=" {{ url('/user/Sponsor') }} ">個人捐款紀錄</a></li>
             </ul>
         </div>
     @else

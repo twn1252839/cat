@@ -20,6 +20,7 @@ Route::resource('/dog', 'App\Http\Controllers\DogController');
 Route::resource('/list', 'App\Http\Controllers\ListController');
 
 Route::resource('/login', 'App\Http\Controllers\LoginController');
+Route::resource('/user', 'App\Http\Controllers\UserController');
 
 
 // Route::middleware(['auth', 'second'])->group(function () {

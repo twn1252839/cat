@@ -14,7 +14,7 @@ class IndexController extends Controller
   public function index()
   {
     //
-    return view('index')->with('user', "123");
+    return view('index');
   }
 
   /**
