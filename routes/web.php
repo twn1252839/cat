@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', 'App\Http\Controllers\IndexController');
 // Route::post('/store', 'App\Http\Controllers\IndexController@store');
 
+// Route::get('/animals/{category}/index',  'App\Http\Controllers\AnimalController@category');
 // Route::resource('/animals', 'App\Http\Controllers\AnimalController');
 Route::get('/animals/cat/index', 'App\Http\Controllers\AnimalController@cat');
 Route::get('/animals/dog/index', 'App\Http\Controllers\AnimalController@dog');

@@ -83,6 +83,14 @@ class AnimalController extends Controller
     //
   }
   //
+  public function category($category)
+  {
+    // return $category;
+    // $category = $category;
+    // $categorys = Animal::where('category', $category)->orderBy('created_at', 'desc')->get();
+    // return view('cat', compact('categorys', 'category'));
+  }
+  //
   public function cat()
   {
     // $cats = Animal::all();
