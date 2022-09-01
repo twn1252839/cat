@@ -112,4 +112,12 @@ class AnimalController extends Controller
     $id = Animal::where('id', $id)->first();
     return view('sponsor', compact('id'));
   }
+  public function InquiryAboutSponsorship()
+  {
+    return view('InquiryAboutSponsorship');
+  }
+  public function charitableActivities()
+  {
+    return view('charitableActivities');
+  }
 }

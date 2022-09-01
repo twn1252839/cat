@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     {{-- <link rel="stylesheet" href="./css/css.css" /> --}}
     <style>
         .AreaSpace_3 {
@@ -288,8 +290,8 @@
                     @show
                     <a href="{{url('Sponsor')}}#" class="button-44">線上捐款</a>
                     <a href="{{url('/')}}"><img src="{{ asset('images\logo.png') }}"></a>
-                    <a href="{{url('/')}}" class="button-44">公益活動</a>
-                    <a href="{{url('/')}}" class="button-44">查詢助養</a>
+                    <a href="{{url('/charitableActivities')}}" class="button-44">公益活動</a>
+                    <a href="{{url('/InquiryAboutSponsorship')}}" class="button-44">查詢助養</a>
                     {{-- <ul class="pt-3">@yield('name')</ul> --}}
                 </div>
 

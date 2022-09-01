@@ -22,6 +22,8 @@ Route::get('/animals/cat/index', 'App\Http\Controllers\AnimalController@cat');
 Route::get('/animals/dog/index', 'App\Http\Controllers\AnimalController@dog');
 Route::get('/animals/list/index', 'App\Http\Controllers\AnimalController@list');
 Route::get('/animals/sponsor/index/{id}', 'App\Http\Controllers\AnimalController@sponsor');
+Route::get('/InquiryAboutSponsorship', 'App\Http\Controllers\AnimalController@InquiryAboutSponsorship');
+Route::get('/charitableActivities', 'App\Http\Controllers\AnimalController@charitableActivities');
 
 Route::resource('/login', 'App\Http\Controllers\LoginController');
 Route::get('/register', 'App\Http\Controllers\LoginController@register');
