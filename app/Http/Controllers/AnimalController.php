@@ -91,12 +91,17 @@ class AnimalController extends Controller
   }
   public function dog(animal $animal)
   {
-    $dog = Animal::where('category', 'dog')->orderBy('created_at', 'desc')->get();
-    return view('dog', compact('dog'));
+    $dogs = Animal::where('category', 'dog')->orderBy('created_at', 'desc')->get();
+    return view('cat', compact('dogs'));
   }
   public function list(animal $animal)
   {
-    $list = Animal::where('category', 'others')->orderBy('created_at', 'desc')->get();
-    return view('list', compact('list'));
+    $lists = Animal::where('category', 'others')->orderBy('created_at', 'desc')->get();
+    return view('cat', compact('lists'));
+  }
+  public function sponsor($id)
+  {
+    $id = Animal::where('id', $id)->first();
+    return view('sponsor', compact('id'));
   }
 }

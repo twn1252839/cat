@@ -20,6 +20,7 @@ Route::resource('/', 'App\Http\Controllers\IndexController');
 Route::get('/animals/cat/index', 'App\Http\Controllers\AnimalController@cat');
 Route::get('/animals/dog/index', 'App\Http\Controllers\AnimalController@dog');
 Route::get('/animals/list/index', 'App\Http\Controllers\AnimalController@list');
+Route::get('/animals/sponsor/index/{id}', 'App\Http\Controllers\AnimalController@sponsor');
 
 Route::resource('/login', 'App\Http\Controllers\LoginController');
 Route::get('/register', 'App\Http\Controllers\LoginController@register');

@@ -152,7 +152,7 @@
     <div class="col-6">
       <div class="row">
 
-        <div class="col-1 logo"><img src="{{asset('images/logo.png')}}"></div>
+        <a href="{{ url('/') }}" class="col-1 logo"><img src="{{asset('images/logo.png')}}"></a>
 
         <div class="offset-8 col-1">
           <a href="{{ url('register') }}" class="reg-btn"><i class="fas fa-user-plus "
