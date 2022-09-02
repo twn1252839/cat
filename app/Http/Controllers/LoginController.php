@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -34,7 +35,22 @@ class LoginController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    // return $request;
+    $storeUser = new User([
+      'userid' => $request->userid,
+      'password' => $request->password,
+      // 'passwordCheck' => $request->passwordCheck,
+      'username' => $request->username,
+      'permission' => 'user',
+      'email' => $request->email,
+      'addr' => $request->addr,
+    ]);
+    $storeUser->save();
+    // return '新增成功';
+
+    return redirect('/api/login');
+    // return redirect('/');
+    // return view('/api/index/store');
   }
 
   /**
@@ -56,7 +72,7 @@ class LoginController extends Controller
    */
   public function edit($id)
   {
-    return view('register');
+    // return view('register');
   }
 
   /**

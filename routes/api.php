@@ -19,6 +19,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/index', 'App\Http\Controllers\IndexController');
+// 註冊
+Route::post('/login/store', 'App\Http\Controllers\LoginController@store');
+// 登入
+Route::resource('/login', 'App\Http\Controllers\LoginController');
 
 
 
