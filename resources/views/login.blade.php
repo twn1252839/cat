@@ -173,8 +173,6 @@
           <input type="password" name="password" id="password" class="btn1 input" placeholder="輸入密碼"><br>
         </div>
         <div class=" offset-1">
-
-          <!-- HTML !-->
           <input type="submit" value="登錄" class="button-3">
         </div>
       </div>

@@ -32,9 +32,10 @@ class IndexController extends Controller
     // return $userid . '----' . $password;
 
     $user = User::where('userid', $userid)->where('password', $password)->first();
+    $admin = User::where('permission', 'admin')->first();
     try {
       if (isset($user)) {
-        return view('index', compact('user'));
+        return view('index', compact('user', 'admin'));
       } else {
         return '登入失敗';
       }

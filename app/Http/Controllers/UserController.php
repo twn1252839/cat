@@ -15,7 +15,7 @@ class UserController extends Controller
   public function index(User $user)
   {
     // return view('Sponsor');
-    return $user->get();
+    // return $user->get();
     // return Member::get();
   }
 
@@ -48,7 +48,7 @@ class UserController extends Controller
    */
   public function show(User $user)
   {
-    return $user;
+    // return $user;
   }
 
   /**
