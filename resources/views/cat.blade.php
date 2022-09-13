@@ -17,8 +17,8 @@
                         <h4> {{ $cat->remark }} </h4><br>
                         <H6> {{ $cat->aniname }} </H6><br>
                         <br>
-                        <h5>目前有n位，尚缺n位助養主人<a href=" {{ url('/animals/sponsor/index', $cat->id) }} "
-                                class="btn button-addyin">加入助養</a>
+                        <h5>目前有n位，尚缺n位助養主人
+                            <a href=" {{ url('/animals/sponsor/index', $cat->id) }} " class="btn button-addyin">加入助養</a>
                         </h5>
                     </div>
                 @endforeach
@@ -42,7 +42,7 @@
                 @endforeach
             </div>
         @else
-           <div class="row">
+            <div class="row">
                 <div class="col-12 title_1">NEWS<span class="title_2">外星人</span></div>
                 <div class="col title_3">LIST TRIBE</div>
             </div>

@@ -72,7 +72,9 @@ class LoginController extends Controller
    */
   public function edit($id)
   {
-    // return view('register');
+
+    $editIDs = User::find($id);
+    return view('editUser', compact('editIDs'));
   }
 
   /**
@@ -84,7 +86,16 @@ class LoginController extends Controller
    */
   public function update(Request $request, $id)
   {
-    //
+    $updateIDs = User::find($id);
+
+    $updateIDs->userid = $request->userid;
+    $updateIDs->password = $request->password;
+    $updateIDs->username = $request->username;
+    $updateIDs->email = $request->email;
+    $updateIDs->addr = $request->addr;
+    $updateIDs->save();
+
+    return '成功';
   }
 
   /**

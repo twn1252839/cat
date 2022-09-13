@@ -19,10 +19,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/index', 'App\Http\Controllers\IndexController');
-// 註冊
+// 註冊 USER
 Route::post('/login/store', 'App\Http\Controllers\LoginController@store');
-// 登入
+// 登入 USER
 Route::resource('/login', 'App\Http\Controllers\LoginController');
+// 更新 USER
+Route::post('/login/{id}', 'App\Http\Controllers\LoginController@update');
 
 
 
