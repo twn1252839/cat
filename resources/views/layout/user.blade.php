@@ -27,6 +27,6 @@
                 <p>default</p>
         @endswitch
     @else
-        <a href=" {{ route('login.index') }} " class="button-44-ac"> 登入/註冊 </a>
+        <a href=" {{ route('login.index') }} " class="button-44-ac" style="width: 75px"> 登入/註冊 </a>
     @endif
 @endsection
